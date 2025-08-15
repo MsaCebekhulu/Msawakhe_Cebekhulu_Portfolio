@@ -29,7 +29,7 @@
         /* Active nav link style */
         .nav-link.active {
             color: #3b82f6; /* Tailwind blue-500 */
-            /*text-decoration: underline;*/
+           <!-- text-decoration: underline;-->
             font-weight: 600; /* Semi-bold */
         }
         .btn-primary {
@@ -111,6 +111,39 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Loading indicator styles */
+        .loading-indicator {
+            display: none;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message-box {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .message-box.success {
+            background-color: #d1fae5; /* Tailwind green-100 */
+            color: #065f46; /* Tailwind green-800 */
+        }
+        .message-box.error {
+            background-color: #fee2e2; /* Tailwind red-100 */
+            color: #991b1b; /* Tailwind red-800 */
+        }
     </style>
 </head>
 <body>
@@ -140,7 +173,7 @@
                 <a href="#projects" class="btn-primary inline-block text-lg">View My Work <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                 <img src="Msawakhe_Cebekhulu.jpeg" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-white">
+                <img src="https://placehold.co/300x300/60a5fa/ffffff?text=Msawakhe+Cebekhulu" alt="Msawakhe Cebekhulu Photo" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-white">
             </div>
         </div>
     </section>
@@ -158,9 +191,9 @@
                 <!-- Left Column: Crafting Digital Solutions That Matter + Statistics -->
                 <div class="md:w-1/2 p-6 rounded-xl shadow-lg bg-blue-50 bg-gradient-to-br from-blue-50 to-indigo-100 text-left flex flex-col justify-between">
                     <div>
-                        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">Crafting Digital Solutions That Matter</h3>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">Building Digital Solutions with Impact</h3>
                         <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center md:text-left">
-                            Proactive and results-driven Full Stack Software Developer with over 7 years of experience in full-stack development. Skilled in designing, developing, and maintaining scalable web applications and APIs, with expertise in cloud platforms like Azure and data visualization with Power BI.
+                           Proactive and results-driven Full Stack Software Developer with over 7 years of experience in full-stack development. Skilled in designing, developing, and maintaining scalable web applications and APIs, with expertise in cloud platforms like Azure and data visualization with Power BI.
                         </p>
 
                         <div class="space-y-6 mb-8">
@@ -175,7 +208,7 @@
                                 <i class="fas fa-cogs text-blue-600 text-2xl mr-4 mt-1"></i>
                                 <div>
                                     <h4 class="text-xl font-semibold text-gray-800">Power Platform Specialist</h4>
-                                    <p class="text-gray-600">Microsoft Certified in Power Platform Fundamentals, with expertise in Power BI.</p>
+                                    <p class="text-gray-600">Microsoft Certified in Power Platform Fundamentals, with expertise in Power Apps, Power Automate, and Power BI.</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -287,7 +320,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-gradient-to-br from-blue-100 to-indigo-200">
+    <section id="skills" class="section-padding bg-white">
         <div class="container text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-12">My Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -335,7 +368,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+   <!-- Projects Section -->
     <section id="projects" class="section-padding bg-gray-50">
         <div class="container text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-12">Projects</h2>
@@ -411,17 +444,17 @@
             </div>-->
         </div>
     </section>
-
+	
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-gradient-to-br from-blue-100 to-indigo-200">
+    <section id="contact" class="section-padding bg-white">
         <div class="container text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-12">Get in Touch</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-                Have a question or a project idea? Feel free to reach out using the form below or connect with me on social media.
+              Have a question or a project idea? Feel free to reach out using the form below or connect with me on social media.
             </p>
             <div class="flex flex-col md:flex-row gap-8 w-full">
                 <!-- Left Column: Contact Details -->
-                <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-white text-left flex flex-col justify-center">
+                <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-blue-50 bg-gradient-to-br from-blue-50 to-indigo-100 text-left flex flex-col justify-center">
                     <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Information</h3>
                     <div class="space-y-6">
                         <div class="flex items-center text-gray-700 text-lg">
@@ -441,22 +474,18 @@
                         <p class="text-gray-700 mb-4">Connect with me:</p>
                         <div class="flex justify-center space-x-6">
                             <!-- LinkedIn Icon -->
-                            <a href="https://www.linkedin.com/in/msawakhe-cebekhulu-7346b1166/" target="_blank" class="text-gray-600 hover:text-blue-500 text-3xl transition-colors duration-300" aria-label="LinkedIn Profile">
+                            <a href="https://www.linkedin.com/in/msawakhe-cebekhulu-b88b22176/" target="_blank" class="text-gray-600 hover:text-blue-500 text-3xl transition-colors duration-300" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <!-- GitHub Icon -->
-                            <!--<a href="https://github.com/Msawakhe-Cebekhulu" target="_blank" class="text-gray-600 hover:text-blue-500 text-3xl transition-colors duration-300" aria-label="GitHub Profile">
-                                <i class="fab fa-github"></i>
-                            </a>-->
-                            <!-- Add more social media icons as needed, e.g., Twitter, Instagram -->
-                            <!-- You can add other social media links here if available -->
+                            <!-- Removed GitHub icon as per request -->
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Column: Contact Form -->
                 <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-white">
-                    <form action="#" method="POST" class="space-y-6">
+                    <form id="contactForm" action="https://formspree.io/f/xeozdpdg" method="POST" class="space-y-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Send Me a Message</h3>
                         <div class="relative">
                             <i class="fas fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
@@ -471,8 +500,12 @@
                             <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
                         <div>
-                            <button type="submit" class="btn-primary w-full text-lg">Send Message <i class="fas fa-paper-plane"></i></button>
+                            <button type="submit" class="btn-primary w-full text-lg flex items-center justify-center" id="submitButton">
+                                <span class="loading-indicator"></span>
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
                         </div>
+                        <div id="formStatus" class="message-box" style="display: none;"></div>
                     </form>
                 </div>
             </div>
@@ -555,21 +588,8 @@
                 projectModal.style.display = 'none';
             }
         });
-		
-		
-		   // When the user clicks on <span> (x), close the modal
-        closeButton.addEventListener('click', function() {
-            projectModal.style.display = 'none';
-        });
 
-        // When the user clicks anywhere outside of the modal content, close it
-        window.addEventListener('click', function(event) {
-            if (event.target == projectModal) {
-                projectModal.style.display = 'none';
-            }
-        });
-		
-		 // Get all sections and nav links for scroll highlighting
+        // Get all sections and nav links for scroll highlighting
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
 
@@ -580,7 +600,6 @@
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 // Adjust this offset based on how far into the section you want the link to activate
-                // A common practice is to activate when the section is at least 1/3 or 1/2 of the viewport height from the top
                 const offset = window.innerHeight / 3;
                 if (window.scrollY >= sectionTop - offset) {
                     current = section.getAttribute('id');
@@ -593,7 +612,7 @@
             });
 
             // Add 'active' class to the corresponding link
-            if (current) { // Ensure 'current' is not empty
+            if (current) {
                 const activeLink = document.getElementById(`nav-${current}`);
                 if (activeLink) {
                     activeLink.classList.add('active');
@@ -604,19 +623,59 @@
         // Listen for scroll events to update active navigation link
         window.addEventListener('scroll', highlightNavLink);
 
-        // Call it once on load to set the initial active link (e.g., if page reloaded in middle of a section)
+        // Call it once on load to set the initial active link
         document.addEventListener('DOMContentLoaded', highlightNavLink);
 
+        // Formspree Integration
+        const contactForm = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        const loadingIndicator = document.querySelector('.loading-indicator');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(contactForm);
+            const formEndpoint = contactForm.action;
+
+            // Show loading indicator
+            loadingIndicator.style.display = 'inline-block';
+            submitButton.disabled = true; // Disable button during submission
+            formStatus.style.display = 'none'; // Hide previous status message
+
+            try {
+                const response = await fetch(formEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+                    formStatus.className = 'message-box success';
+                    contactForm.reset(); // Clear the form
+                } else {
+                    const data = await response.json();
+                    if (data.errors) {
+                        formStatus.textContent = data.errors.map(error => error.message).join(', ');
+                    } else {
+                        formStatus.textContent = 'Oops! There was a problem sending your message. Please try again.';
+                    }
+                    formStatus.className = 'message-box error';
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                formStatus.textContent = 'Network error. Please check your internet connection and try again.';
+                formStatus.className = 'message-box error';
+            } finally {
+                // Hide loading indicator and re-enable button
+                loadingIndicator.style.display = 'none';
+                submitButton.disabled = false;
+                formStatus.style.display = 'block'; // Show status message
+            }
+        });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
