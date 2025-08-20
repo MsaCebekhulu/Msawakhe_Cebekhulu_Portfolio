@@ -144,8 +144,8 @@
             background-color: #fee2e2; /* Tailwind red-100 */
             color: #991b1b; /* Tailwind red-800 */
         }
-
-			 /* Scroll-to-top button styles */
+		
+		 /* Scroll-to-top button styles */
         #scrollToTopBtn {
             display: none; /* Hidden by default */
             position: fixed; /* Fixed position */
@@ -208,8 +208,8 @@
         <div class="container text-center">
             <!-- Top Centered Text -->
             <h2 class="text-4xl font-bold text-blue-900 mb-4">About Me</h2>
-            <p class="text-xl text-gray-600 mb-2 max-w-2xl mx-auto">Passionate about creating scalable solutions</p>
-            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">I believe great software is born from the perfect blend of technical expertise, innovative thinking, and deep understanding of business needs.</p>
+          <!--  <p class="text-xl text-gray-600 mb-2 max-w-2xl mx-auto">Passionate about creating scalable solutions.</p>-->
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Dedicated to creating scalable solutions through a balance of technical expertise, innovation, and alignment with business needs.</p>
 
             <!-- Main content for About Me - two columns -->
             <div class="flex flex-col md:flex-row gap-8 w-full mb-12">
@@ -225,22 +225,22 @@
                             <div class="flex items-start">
                                 <i class="fas fa-layer-group text-blue-900 text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-semibold text-blue-900">Full-Stack Expertise</h4>
-                                    <p class="text-gray-600">Proficient in C#, .NET Core, React, and SQL Server, with hands-on experience in Azure DevOps and CI/CD pipelines.</p>
+                                    <h4 class="text-xl font-semibold text-blue-900">Integrated Full-Stack Development</h4>
+                                    <p class="text-gray-600">Seamlessly building robust web applications from intuitive UIs to powerful backend services, ensuring efficient data exchange and user experience.</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <i class="fas fa-cogs text-blue-900 text-2xl mr-4 mt-1"></i>
+                                <i class="fas fa-cloud-download-alt text-blue-900 text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-semibold text-blue-900">Power Platform Specialist</h4>
-                                    <p class="text-gray-600">Microsoft Certified in Power Platform Fundamentals, with expertise in Power Apps, Power Automate, and Power BI.</p>
+                                    <h4 class="text-xl font-semibold text-blue-900">Azure Cloud & DevOps Champion</h4>
+                                    <p class="text-gray-600">Utilizing Microsoft Azure for scalable deployments, securing access, and streamlining development workflows through CI/CD pipelines.</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-tachometer-alt text-blue-900 text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-semibold text-blue-900">Performance-Driven</h4>
-                                    <p class="text-gray-600">Committed to applying Object-Oriented Programming (OOP), SOLID principles, and Test-Driven Development (TDD) to deliver high-quality, maintainable software solutions.</p>
+                                    <h4 class="text-xl font-semibold text-blue-900">Quality-Driven & Insightful Solutions</h4>
+                                    <p class="text-gray-600">Dedicated to delivering high-quality, maintainable software via SOLID principles and TDD, and transforming complex data into actionable Power BI insights.</p>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +248,7 @@
                     <!-- Statistics -->
                     <div class="grid grid-cols-3 gap-4 text-center mt-8 pt-8 border-t border-gray-200">
                         <div>
-                            <p class="text-4xl font-bold text-blue-900">4+</p>
+                            <p class="text-4xl font-bold text-blue-900">5+</p>
                             <p class="text-gray-700 font-medium">Major Projects</p>
                         </div>
                         <div>
@@ -256,7 +256,7 @@
                             <p class="text-gray-700 font-medium">Years Experience</p>
                         </div>
                         <div>
-                            <p class="text-4xl font-bold text-blue-900">1+</p>
+                            <p class="text-4xl font-bold text-blue-900">1</p>
                             <p class="text-gray-700 font-medium">Companies Worked</p>
                         </div>
                     </div>
@@ -348,6 +348,9 @@
     <section id="skills" class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="container text-center">
             <h2 class="text-4xl font-bold text-blue-900 mb-12">My Skills</h2>
+			 <p class="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+                Here's a breakdown of the technical skills and proficiencies I bring to every project.
+            </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Skill Card 1 -->
                 <div class="card">
@@ -397,68 +400,71 @@
     <section id="projects" class="section-padding bg-gray-50">
         <div class="container text-center">
             <h2 class="text-4xl font-bold text-blue-900 mb-12">Projects</h2>
+			 <p class="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+                Dive into my core projects, each a testament to my skills in developing robust solutions and leading successful initiatives.
+            </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project Card 1: Crowdsourcing System -->
-                <div class="card flex flex-col items-center">
+                <div class="card flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100">
                    <img src="CrowdSourcing.png" alt="Crowdsourcing System" class="w-full h-48 object-cover rounded-md mb-4">
                       <h3 class="text-2xl font-semibold mb-2 text-blue-900">Crowdsourcing System (Web)</h3>
                     <p class="text-gray-600 text-center mb-4 flex-grow">Developed a system enabling small businesses to bid for organizational opportunities.</p>
                        <button class="btn-primary text-sm learn-more-btn bg-blue-900 hover:bg-blue-800"
                             data-title="Crowdsourcing System (Web Application)"
                             data-description="Developed a Crowdsourcing System for Sasol enabling small businesses to request and bid for organizational opportunities. Technologies Used: .NET Core, C#, SQL Server, Azure Active Directory, Power BI, Git, Azure DevOps, HTML, CSS, JavaScript."
-                            data-responsibilities="Lead a team of developers, guiding technical discussions and mentoring junior team members; Design and implement front-end features and back-end services with .NET Core, ensuring seamless integration; Build and maintain RESTful APIs to support front-end functionalities and third-party integrations; Manage continuous integration and deployment pipelines using Azure DevOps, enhancing deployment efficiency and reliability; Develop and maintain Power BI reports and dashboards to provide actionable insights to stakeholders; Participated on daily stand-ups, and retrospectives to ensure timely delivery of project milestones; Implement Single Sign-On (SSO) using Azure Active Directory to secure user access and data integrity."
+                            data-responsibilities="Lead a team of developers, guiding technical discussions and mentoring junior team members.; Design and implement front-end features and back-end services with .NET Core, ensuring seamless integration.; Manage continuous integration and deployment pipelines using Azure DevOps, enhancing deployment efficiency and reliability.; Develop and maintain Power BI reports and dashboards to provide actionable insights to stakeholders.; Participated on agile ceremonies to ensure timely delivery of project milestones.; Implement Single Sign-On (SSO) using Azure Active Directory to secure user access and data integrity."
                     >
                         Learn More <i class="fas fa-external-link-alt text-sm ml-1"></i>
                     </button>
                 </div>
                 <!-- Project Card 2: Voyage Management System (Mobile) -->
-                <div class="card flex flex-col items-center">
+                <div class="card flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100">
                    <img src="VMS.png" alt="Voyage Management Mobile" class="w-full h-48 object-cover rounded-md mb-4">
                       <h3 class="text-2xl font-semibold mb-2 text-blue-900">Voyage Management System (Mobile)</h3>
                     <p class="text-gray-600 text-center mb-4 flex-grow">Developed a mobile system for deep-sea logistics, insurance, freight, and demurrage invoice verification.</p>
                    <button class="btn-primary text-sm learn-more-btn bg-blue-900 hover:bg-blue-800"
                             data-title="Voyage Management System (Mobile Application)"
                             data-description="Developed the Voyage Management System for Sasol Bulk Marine, facilitating deep-sea logistics, insurance processing, freight management, and demurrage invoice verification for chemical products. Technologies Used: .NET Core, C#, Flutter, Dart, SQL Server, Power BI, Git, Azure DevOps."
-                            data-responsibilities="Led the development of robust Web APIs using .NET Core, ensuring efficient data exchange between the mobile application and server; Built and maintained RESTful APIs, enhancing system scalability and performance; Implemented and managed continuous integration and deployment pipelines to streamline the release process; Created comprehensive Power BI reports to monitor system performance and provide insights for decision-making; Worked closely with Product Owners and QA testers to define requirements, conduct testing, and deploy system components; Utilized Azure services to deploy and manage applications, ensuring high availability and reliability."
+                            data-responsibilities="Led the development of robust Web APIs using .NET Core, ensuring efficient data exchange.; Built and maintained RESTful APIs, enhancing system scalability and performance.; Participated on agile ceremonies to ensure timely delivery of project milestones.; Implemented and managed continuous integration and deployment pipelines to streamline the release process.; Created comprehensive Power BI reports to monitor system performance and provide insights for decision-making.; Worked closely with Product Owners and QA testers to define requirements, conduct testing, and deploy system components.; Utilized Azure services to deploy and manage applications, ensuring high availability and reliability."
                     >
                         Learn More <i class="fas fa-external-link-alt text-sm ml-1"></i>
                     </button>
                 </div>
                 <!-- Project Card 3: Voyage Management System (Web) -->
-                <div class="card flex flex-col items-center">
+                <div class="card flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100">
                    <img src="VMS.png" alt="Voyage Management Web" class="w-full h-48 object-cover rounded-md mb-4">
                       <h3 class="text-2xl font-semibold mb-2 text-blue-900">Voyage Management System (Web)</h3>
                     <p class="text-gray-600 text-center mb-4 flex-grow">Enhanced and maintained a web system for deep-sea logistics, insurance, freight, and demurrage invoice verification.</p>
                       <button class="btn-primary text-sm learn-more-btn bg-blue-900 hover:bg-blue-800"
                             data-title="Voyage Management System (Web Application)"
-                            data-description="Enhanced and maintained the Voyage Management System for Sasol Bulk Marine, supporting deep-sea logistics, insurance processing, freight management, and demurrage invoice verification. Technologies Used: ASP.NET Web Forms, .NET Core, C#, SQL Server, Azure Active Directory, Power BI, NUnit, SpecFlow, Git, Azure DevOps, HTML, CSS, JavaScript."
-                            data-responsibilities="Led development teams, coordinating with clients and third-party stakeholders to ensure project alignment and timely delivery; Developed and maintained both front-end and back-end components using ASP.NET Web Forms and .NET Core; Implemented automated testing frameworks using SpecFlow and NUnit to ensure software quality and reliability; Managed continuous integration and deployment pipelines, automating build and release processes to enhance efficiency; Oversaw Power BI reports and workspaces, providing data visualization and reporting solutions to stakeholders; Provided second and third-line support by troubleshooting and resolving high-impact production issues promptly; Integrated Single Sign-On (SSO) with Azure Active Directory to enhance system security and user authentication."
+                            data-description="Enhanced and maintained the Voyage Management System for Sasol Bulk Marine, supporting deep-sea logistics, insurance processing, freight management, and demurrage invoice verification. Technologies Used: ASP.NET , C#, SQL Server, Azure Active Directory, Power BI, NUnit, SpecFlow, Git, Azure DevOps, HTML, CSS, JavaScript"
+                            data-responsibilities="Led development team, coordinating with clients and third-party stakeholders to ensure project alignment and timely delivery.; Developed and maintained both front-end and back-end components using ASP.NET Framework.; Participated on agile ceremonies to ensure timely delivery of project milestones.; Managed continuous integration and deployment pipelines, automating build and release processes to enhance efficiency.; Oversaw Power BI reports and workspaces, providing data visualization and reporting solutions to stakeholders.; Provided second and third-line support by troubleshooting and resolving high-impact production issues promptly.; Implemented automated testing frameworks using SpecFlow and NUnit to ensure software quality and reliability.; Integrated Single Sign-On (SSO) with Azure Active Directory to enhance system security and user authentication."
                     >
                         Learn More <i class="fas fa-external-link-alt text-sm ml-1"></i>
                     </button>
                 </div>
                  <!-- Project Card 4: Queuing System -->
-                <div class="card flex flex-col items-center">
+                <div class="card flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100">
                     <img src="https://placehold.co/400x250/dbeafe/1e40af?text=Queuing+System" alt="Queuing System" class="w-full h-48 object-cover rounded-md mb-4">
                     <h3 class="text-2xl font-semibold mb-2 text-blue-900">Queuing System</h3>
                     <p class="text-gray-600 text-center mb-4 flex-grow">Developed a prototype to streamline patient management in hospitals, reducing wait times.</p>
                       <button class="btn-primary text-sm learn-more-btn bg-blue-900 hover:bg-blue-800"
                             data-title="Queuing System"
-                            data-description="Developed a Queuing System prototype to streamline patient management in hospitals, reducing wait times and improving patient flow. Technologies Used: ASP.NET, C#, CSS, JavaScript, SQL Server, Git, HTML, CSS."
-                            data-responsibilities="Designed and implemented both front-end and back-end components to ensure seamless user experiences and robust functionality; Enhanced system performance by optimizing database queries and refining application logic; Worked with stakeholders to gather requirements and deliver solutions that met user needs."
+                            data-description="Developed a Queuing System prototype to streamline patient management in hospitals, reducing wait times and improving patient flow. Technologies Used: ASP.NET, C#, CSS, SQL Server, Git, HTML, CSS, JavaScript.."
+                            data-responsibilities="Designed and implemented both front-end and back-end components to ensure seamless user experiences and robust functionality.; Enhanced system performance by optimizing database queries and refining application logic.; "
                     >
                         Learn More <i class="fas fa-external-link-alt text-sm ml-1"></i>
                     </button>
                 </div>
                 <!-- Project Card 5: Task Tracker -->
-                <div class="card flex flex-col items-center">
+                <div class="card flex flex-col items-center bg-gradient-to-br from-blue-50 to-indigo-100" >
                     <img src="TaskTracker.png" alt="Task Tracker" class="w-full h-48 object-cover rounded-md mb-4">
                      <h3 class="text-2xl font-semibold mb-2 text-blue-900">Task Tracker</h3>
                     <p class="text-gray-600 text-center mb-4 flex-grow">Updated and improved an existing Task Tracker application to enhance usability and functionality.</p>
                         <button class="btn-primary text-sm learn-more-btn bg-blue-900 hover:bg-blue-800"
                             data-title="Task Tracker"
                             data-description="Updated and improved the existing Task Tracker application to enhance usability and functionality. Technologies Used: C#, ASP.NET, SQL Server, HTML, CSS, JavaScript.."
-                            data-responsibilities="Modified the application's look and feel to improve user experience and ease of use; Implemented new functionalities to better track and manage tasks, increasing overall system efficiency; Identified and resolved issues to ensure the application operated smoothly and reliably."
+                            data-responsibilities="Modified the application's look and feel to improve user experience and ease of use.; Implemented new functionalities to better track and manage tasks, increasing overall system efficiency.; Identified and resolved issues to ensure the application operated smoothly and reliably."
                     >
                         Learn More <i class="fas fa-external-link-alt text-sm ml-1"></i>
                     </button>
@@ -471,35 +477,35 @@
     </section>
 	
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-white">
+    <section id="contact" class="section-padding bg-gradient-to-br from-blue-800 to-indigo-900 text-white">
         <div class="container text-center">
-            <h2 class="text-4xl font-bold text-blue-900 mb-12">Get in Touch</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+          <h2 class="text-4xl font-bold mb-12">Get in Touch</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
               Have a question or a project idea? Feel free to reach out using the form below or connect with me on social media.
             </p>
             <div class="flex flex-col md:flex-row gap-8 w-full">
                 <!-- Left Column: Contact Details -->
-                <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-blue-50 bg-gradient-to-br from-blue-50 to-indigo-100 text-left flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold text-blue-900 mb-6 text-center">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-center text-gray-700 text-lg">
-                            <i class="fas fa-envelope mr-4 text-blue-900 text-2xl"></i>
+               <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-blue-700 bg-gradient-to-br from-blue-700 to-indigo-800 text-left flex flex-col justify-center text-white">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Contact Information</h3>
+						<div class="space-y-6">
+                        <div class="flex items-center text-lg">
+                            <i class="fas fa-envelope mr-4 text-white text-2xl"></i>
                             <a href="mailto:msawakhe001@gmail.com" class="hover:underline">msawakhe001@gmail.com</a>
                         </div>
-                        <div class="flex items-center text-gray-700 text-lg">
-                            <i class="fas fa-phone-alt mr-4 text-blue-900 text-2xl"></i>
+                        <div class="flex items-center text-lg">
+                            <i class="fas fa-phone-alt mr-4 text-white text-2xl"></i>
                             <a href="tel:+27798377468" class="hover:underline">+27 798 377 468</a>
                         </div>
-                        <div class="flex items-center text-gray-700 text-lg">
-                            <i class="fas fa-map-marker-alt mr-4 text-blue-900 text-2xl"></i>
-                            Durban, South Africa (Willing to relocate)
+                        <div class="flex items-center text-lg">
+                            <i class="fas fa-map-marker-alt mr-4 text-white text-2xl"></i>
+                            Durban, KwaZulu-Natal, South Africa
                         </div>
                     </div>
-                    <div class="mt-8 text-center">
-                        <p class="text-gray-700 mb-4">Connect with me:</p>
+					<div class="mt-8 text-center">
+                        <p class="mb-4">Connect with me:</p>
                         <div class="flex justify-center space-x-6">
                             <!-- LinkedIn Icon -->
-                            <a href="https://www.linkedin.com/in/msawakhe-cebekhulu-7346b1166/" target="_blank" class="text-gray-600 hover:text-blue-500 text-3xl transition-colors duration-300" aria-label="LinkedIn Profile">
+                            <a href="https://www.linkedin.com/in/msawakhe-cebekhulu-7346b1166/" target="_blank" class="text-white hover:text-blue-200 text-3xl transition-colors duration-300" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <!-- GitHub Icon -->
@@ -509,7 +515,7 @@
                 </div>
 
                 <!-- Right Column: Contact Form -->
-                <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-white">
+                    <div class="md:w-1/2 p-8 rounded-xl shadow-lg bg-white">
                     <form id="contactForm" action="https://formspree.io/f/xeozdpdg" method="POST" class="space-y-6">
                         <h3 class="text-2xl font-bold text-blue-900 mb-6 text-center">Send Me a Message</h3>
                         <div class="relative">
@@ -557,8 +563,8 @@
             </ul>
         </div>
     </div>
-
-		    <!-- Scroll-to-top Button -->
+	
+	    <!-- Scroll-to-top Button -->
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -706,8 +712,9 @@
                 formStatus.style.display = 'block'; // Show status message
             }
         });
-
-		        // Get the button
+		
+		
+        // Get the button
         let mybutton = document.getElementById("scrollToTopBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
@@ -728,9 +735,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
